@@ -109,9 +109,9 @@ function placeOrder(){
   }).then((result) => {
     return ChargeCreditCard(result);
   }).then((result) => {
-    console.log("Summary of Transaction: " + result + "'place-order has succeeded'");
+    console.log("Summary of Transaction: " + result + "==> place-order has succeeded");
   }).catch(((result) => {
-     console.log("Summary of Transaction: " + result +"'place-order has failed'" );
+     console.log("Summary of Transaction: " + result +"==> place-order has failed" );
   }))
 }
 
